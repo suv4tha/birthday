@@ -1,0 +1,99 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('/static/media/hbdm.jpg') no-repeat center center fixed;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 90%; /* Allow some spacing on smaller screens */
+    width: 350px; /* Default size */
+}
+
+.gif-box {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.gif {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.message {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.yes {
+    background-color: #58d68d;
+}
+
+.no {
+    background-color: #e74c3c;
+    position: relative;
+}
+
+.no:hover {
+    transform: translate(calc(50px - 100%), calc(50px - 100%)); /* Moves button away */
+}
+
+.button:hover {
+    opacity: 0.9;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 600px) {
+    body {
+        background: url('/static/media/hbdm.jpg') no-repeat center center;
+        background-size: contain;
+    }
+
+    .container {
+        width: 80%; /* Shrink container on small screens */
+    }
+
+    .message {
+        font-size: 16px; /* Scale down text */
+    }
+
+    .button {
+        font-size: 14px; /* Smaller buttons */
+    }
+}

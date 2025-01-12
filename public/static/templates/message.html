@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Page</title>
+    <link rel="stylesheet" href="/static/css/message.css">
+</head>
+<body>
+
+    <header>
+        <h1>A whisper of Gratitude</h1>
+        <button onclick="window.location.href='/'">Back to Home</button>
+    </header>
+
+    <main>
+        <!-- Cute Description -->
+        <div class="description">
+            <p>I hope this gift brings a smile to your face, just like you always brighten my days. You mean the world to me, and I wanted to give you something special to show how much you are loved and appreciated.</p>
+        </div>
+
+        <!-- Image container for message.jpg -->
+        <div class="image-container">
+            <img class="centered-image" src="/static/media/message.jpg" alt="Message Image">
+        </div>
+
+        <!-- Video container for message.mp4 -->
+        <div class="video-container">
+            <video class="centered-video" controls loop autoplay>
+                <source src="/static/media/message.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <!-- New Image container for love.jpg -->
+        <div class="image-container">
+            <img class="centered-image" src="/static/media/love.jpg" alt="Love Image">
+        </div>
+
+        <!-- New Image container for final.jpg -->
+        <div class="image-container">
+            <img class="centered-image" src="/static/media/final.jpg" alt="Final Image">
+        </div>
+
+        <!-- Content section -->
+        <section id="message-content">
+            <p></p>
+        </section>
+    </main>
+
+    <script src="/static/js/message.js"></script>
+</body>
+</html>

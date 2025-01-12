@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Gift</title>
+    <link rel="stylesheet" href="/static/css/audio-gift.css">
+    <script defer src="/static/js/audio-gift.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- For icons -->
+</head>
+<body>
+    <!-- Spotify-like Header -->
+    <header class="header">
+        <div class="logo">
+            <img src="/static/media/logo.jpeg" alt="Logo" />
+        </div>
+        <h1>Spotify</h1>
+    </header>
+
+    <!-- Playlist Cover -->
+    <section class="playlist-cover">
+        <img src="/static/media/jee78.jpg" alt="Playlist Cover" />
+        <h2>Playlist of your favourite songs</h2>
+        <p><3.</p>
+    </section>
+
+    <!-- Playlist Section -->
+    <div class="playlist">
+        <!-- Song 1 -->
+        <div class="song" data-audio="/static/media/jee1.mp3" data-image="/static/media/jee1.jpg" data-title="Kaarkuzhal Kadavaiye" data-artist="By Jeeva Prasath M">
+            <div class="song-image">
+                <img src="/static/media/jee1.jpg" alt="Kaarkuzhal Kadavaiye" />
+            </div>
+            <div class="song-details">
+                <span class="song-title">Agar Tum Sath Ho</span>
+                <span class="song-artist">By Arijit Singh</span>
+            </div>
+            <div class="song-actions">
+                <button class="play-btn">
+                    <i class="fas fa-play"></i>
+                </button>
+                <a href="/static/media/jee1.mp3" download class="download-btn">
+                    <i class="fas fa-download"></i>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Song 2 -->
+        <div class="song" data-audio="/static/media/jee2.mp3" data-image="/static/media/jee2.jpg" data-title="Enadhuyire" data-artist="By Jeeva Prasath M">
+            <div class="song-image">
+                <img src="/static/media/jee2.jpg" alt="Enadhuyire" />
+            </div>
+            <div class="song-details">
+                <span class="song-title">Pehle Bhi Mein</span>
+                <span class="song-artist">By Vishal Mishra</span>
+            </div>
+            <div class="song-actions">
+                <button class="play-btn">
+                    <i class="fas fa-play"></i>
+                </button>
+                <a href="/static/media/jee2.mp3" download class="download-btn">
+                    <i class="fas fa-download"></i>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Song 3 -->
+        <div class="song" data-audio="/static/media/jee3.mp3" data-image="/static/media/jee2.jpeg" data-title="Birthday Mix" data-artist="By DJ C">
+            <div class="song-image">
+                <img src="/static/media/jee3.jpg" alt="Birthday Mix" />
+            </div>
+            <div class="song-details">
+                <span class="song-title">Bulleya</span>
+                <span class="song-artist">By Pritam and Amit Mishra</span>
+            </div>
+            <div class="song-actions">
+                <button class="play-btn">
+                    <i class="fas fa-play"></i>
+                </button>
+                <a href="/static/media/jee3.mp3" download class="download-btn">
+                    <i class="fas fa-download"></i>
+                </a>
+            </div>
+        </div>
+<!-- Song 4 -->
+<div class="song" data-audio="/static/media/jee4.mp3" data-image="/static/media/jee4.jpg" data-title="Chinnanjiru Nilave" data-artist="By Jeeva Prasath M">
+    <div class="song-image">
+        <img src="/static/media/jee4.jpg" alt="Chinnanjiru Nilave" />
+    </div>
+    <div class="song-details">
+        <span class="song-title">Meri Aashiqui</span>
+        <span class="song-artist">By Shreya Ghoshal</span>
+    </div>
+    <div class="song-actions">
+        <button class="play-btn">
+            <i class="fas fa-play"></i>
+        </button>
+        <a href="/static/media/jee4.mp3" download class="download-btn">
+            <i class="fas fa-download"></i>
+        </a>
+    </div>
+</div>
+
+<!-- Song 5 -->
+<div class="song" data-audio="/static/media/jee5.mp3" data-image="/static/media/jee5.jpeg" data-title="Kaise Hua?" data-artist="By Jeeva Prasath M">
+    <div class="song-image">
+        <img src="/static/media/jee5.jpg" alt="Kaise Hua?" />
+    </div>
+    <div class="song-details">
+        <span class="song-title">Kaise Hua?</span>
+        <span class="song-artist">By Vishal Mishra</span>
+    </div>
+    <div class="song-actions">
+        <button class="play-btn">
+            <i class="fas fa-play"></i>
+        </button>
+        <a href="/static/media/jee(kaise).mp3" download class="download-btn">
+            <i class="fas fa-download"></i>
+        </a>
+    </div>
+</div>
+
+
+    </div>
+
+<!-- Now Playing Section -->
+<div class="now-playing" style="display: none;">
+    <div class="now-playing-image">
+        <img src="" alt="Now Playing" />
+    </div>
+    <div class="now-playing-details">
+        <span class="now-playing-title">Song Title</span>
+        <span class="now-playing-artist">Song Artist</span>
+        <div class="progress-container">
+            <input type="range" id="song-progress" class="song-progress" value="0" max="100" step="1" />
+        </div>
+        <button class="now-playing-pause-btn">
+            <i class="fas fa-pause"></i>
+        </button>
+    </div>
+</div>
+<!-- Next Button -->
+<div class="next-button-container">
+    <button id="next-button" class="next-button">Next</button>
+</div>
+
+
+
+    <!-- Audio Player -->
+    <audio id="audio-player" controls style="display: none;"></audio>
+</body>
+</html>

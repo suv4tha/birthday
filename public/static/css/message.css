@@ -1,0 +1,133 @@
+/* Reset the default margin and padding for the body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7; /* Background color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Align items at the top */
+    min-height: 100vh;
+}
+
+/* Styling the header */
+header {
+    background-color: #FFB6C1; /* Pastel pink color */
+    width: 100%; /* Make the header stretch across the full width */
+    padding: 20px 0; /* Add padding to give space around the text */
+    text-align: center; /* Centers the header text */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10; /* Ensures the header stays on top */
+}
+
+/* Style for the title in the header */
+header h1 {
+    margin: 0; /* Remove margin */
+    font-size: 24px;
+    color: white; /* White color for the text */
+}
+
+/* Styling for the button */
+button {
+    background-color: white; /* Button background is now white */
+    border: 2px solid #FFB6C1; /* Border matching the header color */
+    color: black; /* Text color is black */
+    padding: 12px 30px;  /* Increased padding for a more button-like appearance */
+    font-size: 18px;  /* Larger text for emphasis */
+    font-weight: bold; /* Make the text bold */
+    cursor: pointer;
+    border-radius: 8px;  /* Slightly more rounded corners */
+    transition: background-color 0.3s ease, transform 0.3s ease;  /* Added transform for smooth scaling */
+    margin-top: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);  /* Added shadow for depth */
+}
+
+/* Hover effect for buttons */
+button:hover {
+    background-color: #FFB6C1; /* Light pink background on hover */
+    color: white; /* Text changes to white when hovered */
+    transform: translateY(-2px); /* Button lifts up on hover */
+}
+
+/* Focus effect */
+button:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(255, 105, 180, 0.6); /* Glowing effect on focus */
+}
+
+/* Active effect when clicking the button */
+button:active {
+    transform: translateY(2px); /* Button depresses on click */
+}
+
+/* Cute Description Styling */
+.description {
+    font-size: 18px;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    color: #333;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Add some responsiveness */
+@media (max-width: 600px) {
+    .description {
+        font-size: 16px;
+        padding: 15px;
+    }
+}
+
+/* Style for the content section */
+main {
+    margin-top: 120px; /* Adjusted to push the content below the fixed header */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Image container styling */
+.image-container {
+    display: flex;
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center; /* Centers the image vertically */
+    margin-bottom: 20px; /* Space below the image */
+}
+
+/* Styling for the image */
+.centered-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Video container styling */
+.video-container {
+    display: flex;
+    justify-content: center; /* Centers the video horizontally */
+    align-items: center; /* Centers the video vertically */
+    width: 100%; /* Make sure the video takes full width available */
+    margin-bottom: 30px; /* Space below the video */
+}
+
+/* Styling for the video */
+.centered-video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

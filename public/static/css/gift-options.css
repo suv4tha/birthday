@@ -1,0 +1,88 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fullscreen Background Video */
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the entire background */
+    z-index: -1; /* Places video in the background */
+}
+
+/* Container for the Gift Options */
+.gift-options-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9); /* White with slight transparency */
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Soft shadow for the box */
+    width: 80%; /* Default size for the box */
+    max-width: 400px; /* Limit the size on larger screens */
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Heading Style */
+.gift-options-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Options List */
+.options-list {
+    list-style: none;
+    width: 100%;
+}
+
+/* Buttons for Each Option */
+.gift-option {
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    background-color: #3498db;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.gift-option:hover {
+    background-color: #2980b9;
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .gift-options-container {
+        width: 90%; /* Slightly smaller box on smaller screens */
+        padding: 20px;
+    }
+
+    .gift-options-container h1 {
+        font-size: 20px; /* Smaller heading on smaller screens */
+    }
+
+    .gift-option {
+        font-size: 16px; /* Adjust button size */
+        padding: 10px 15px;
+    }
+}

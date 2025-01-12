@@ -1,0 +1,295 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #121212;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.header {
+    background-color: #1db954;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+h1 {
+    font-size: 28px;
+    color: #fff;
+}
+
+/* Playlist Cover */
+.playlist-cover {
+    text-align: center;
+    padding: 20px;
+}
+
+.playlist-cover img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.playlist-cover h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.playlist-cover p {
+    color: #b3b3b3;
+    font-size: 14px;
+}
+
+/* Playlist Section */
+.playlist {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+}
+
+.song {
+    background-color: #282828;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    height: 120px; /* Enforces consistent height */
+    max-height: 120px; /* Ensures uniform size */
+}
+
+.song:hover {
+    background-color: #404040;
+}
+
+.song-image img {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    object-fit: cover; /* Ensure the image fits in the designated area */
+}
+
+.song-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.song-title {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.song-artist {
+    font-size: 14px;
+    color: #b3b3b3;
+}
+
+/* Song Actions: Play and Download Buttons */
+.song-actions {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.play-btn,
+.download-btn {
+    background-color: transparent;
+    border: none;
+    color: #1db954;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.2s, color 0.3s;
+    text-decoration: none;
+}
+
+.play-btn:hover,
+.download-btn:hover {
+    transform: scale(1.2);
+    color: #1aa34a;
+}
+
+.download-btn i {
+    font-size: 18px;
+}
+
+/* Now Playing Section */
+.now-playing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #282828;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+}
+
+.now-playing-image img {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.now-playing-details {
+    flex: 1;
+}
+
+.now-playing-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.now-playing-artist {
+    font-size: 16px;
+    color: #b3b3b3;
+}
+
+.now-playing-pause-btn {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.now-playing-pause-btn:hover {
+    transform: scale(1.2);
+}
+
+/* Audio Player */
+#audio-player {
+    width: 100%;
+    margin-top: 20px;
+    display: none;
+}
+
+/* Gift Button Container */
+.gift-button-container {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+}
+
+#giftButton {
+    background-color: #1db954;
+    color: white;
+    border: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#giftButton:hover {
+    background-color: #1aa34a;
+}
+
+/* Modal Styling */
+.gift-options-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 50;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #282828;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.modal-buttons {
+    margin-top: 20px;
+}
+
+.modal-btn {
+    background-color: #1db954;
+    color: white;
+    border: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+}
+
+.modal-btn:hover {
+    background-color: #1aa34a;
+}
+
+.modal-btn:focus {
+    outline: none;
+}
+
+/* Next Button Container */
+.next-button-container {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 1000;
+}
+
+.next-button {
+    background: linear-gradient(90deg, #1db954, #1ed760);
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.next-button:hover {
+    background: linear-gradient(90deg, #1ed760, #1db954);
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.next-button:active {
+    transform: scale(0.98);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+}

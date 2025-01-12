@@ -1,0 +1,67 @@
+/* Set white background for the body */
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Section */
+.header {
+    text-align: center;
+    padding: 30px;
+    background-color: #f8d9e3; /* Pastel pink color */
+    border-bottom: 2px solid #ddd;
+}
+
+.header h1 {
+    color: #d88aaf; /* A darker pink color */
+    font-size: 36px;
+}
+
+.header .description {
+    color: #555;
+    font-size: 18px;
+}
+
+/* Video Gallery Section */
+.video-gallery {
+    display: grid;
+    grid-template-columns: 1fr; /* 1 column */
+    grid-template-rows: repeat(11, 1fr); /* 11 rows */
+    gap: 20px; /* Space between videos */
+    padding: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+.video-item {
+    width: 100%;
+    max-width: 600px; /* Limit video width */
+}
+
+video {
+    width: 100%; /* Make video fill the cell */
+    height: auto;
+}
+
+/* Back Button Styling */
+.back-button-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.back-button {
+    background-color: #d88aaf; /* Matching pastel pink */
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.back-button:hover {
+    background-color: #c7749b;
+}
