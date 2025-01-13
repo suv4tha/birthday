@@ -10,25 +10,35 @@ This repository is open to anyone who wants to explore, modify, or use it as a t
 
 Features
 Static Website: Built using HTML, CSS, and JavaScript.
+
 Responsive Design: Optimized for various screen sizes and devices.
+
 Netlify Deployment: Hosted on Netlify for free.
+
 Customizable: Easily replace images, videos, and text with your own content.
+
 How to Use
 Clone or fork this repository.
+
 Modify the content:
 Replace images, videos, and text with your personalized content.
+
 Deploy it:
 You can deploy the site on Netlify or any other hosting platform of your choice.
+
 To deploy on Netlify:
 Sign up on Netlify.
 Link your GitHub repository and follow the instructions to deploy the site.
+
 Enjoy:
 Share it with friends, use it as a template for projects, or modify it to create your own personal gift!
+
 Installation
 To get started, clone this repository:
 
 bash
 git clone https://github.com/your-username/your-repository.git
+
 License
 This project is open source and available under the MIT License.
 
