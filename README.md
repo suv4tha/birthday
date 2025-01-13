@@ -1,5 +1,3 @@
-Here’s a polished and well-aligned version of your README content for the GitHub repository:
-
 ---
 
 # A Personal Birthday Gift Website  
@@ -59,4 +57,3 @@ This project is open source and available under the **MIT License**.
 
 ---
 
-This version is more structured, visually appealing, and easy to read. Let me know if you’d like any further tweaks!
