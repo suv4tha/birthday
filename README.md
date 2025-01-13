@@ -28,7 +28,6 @@ Installation
 To get started, clone this repository:
 
 bash
-Copy code
 git clone https://github.com/your-username/your-repository.git
 License
 This project is open source and available under the MIT License.
