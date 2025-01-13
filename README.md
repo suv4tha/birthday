@@ -40,7 +40,7 @@ This repository is open to anyone who wants to explore, modify, or use it as a t
 To get started, clone this repository:  
 
 ```bash
-git clone https://github.com/suv4tha/birthday.git
+git clone https://github.com/suv4tha/BirthdayGiftSite.git
 ```
 
 ---
